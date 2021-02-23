@@ -1,37 +1,45 @@
 # spider
 
 #### 介绍
+
 Python爬虫从零开始
 
-#### 软件架构
-软件架构说明
+## 爬虫初步
+
+### 最基本的爬虫 - Request
+
+一个比较好用的库：[Requests](https://github.com/psf/requests)  
+模拟人点击网页发送GET请求的[基本爬虫](begin/base.py)，它可以获取bing首页的全部HTML代码，返回的HTML代码较长，需要提取其中的有用信息，通常借助[BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)  
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  克隆仓库  
+```bash
+git clone 
+```
+2.  安装虚拟环境  
+需要使用pipenv将本项目与其它项目隔离，当然这并不是强制的，安装pipenv的办法也很简单 - `pip install pipenv`
+```bash
+pipenv install
+```
+3.  激活虚拟环境运行代码  
+每次进入虚拟环境中都需要激活虚拟环境，然后进入对于的目录下运行相应代码
+```bash
+pipenv shell    # 激活环境
+pipenv run python base.py   # 运行base.py
+```
+4. 删除虚拟环境（可选）
+当不再需要使用项目的时候，删除项目文件的时候并不会自动删除虚拟环境，需要手动删除。
+```bash
+pipenv --rm
+```
 
-#### 参与贡献
+
+## 参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
