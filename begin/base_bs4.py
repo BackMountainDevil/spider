@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- encoding: UTF-8 -*-
 '''
 @File    :  base_bs4.py
 @Time    :  2021/02/24 15:42:38
